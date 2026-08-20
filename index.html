@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guía interactiva de Auditoría de Sistemas basada en las clases y el caso Banco NovaGuate.">
+  <title>AuditLab — Guía de Auditoría de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="AuditLab, inicio"><span class="brand-mark">A</span><span>Audit<span>Lab</span></span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#guia">Guía</a><a href="#ruta">Ruta</a><a href="#actividades">Actividades</a><a href="#caso">Casos</a><a href="#quiz">Cuestionario</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">☾</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> AUDITORÍA DE SISTEMAS · GUÍA INTERACTIVA</div>
+        <h1>Piensa como<br>un <em>auditor.</em></h1>
+        <p>Domina los conceptos, conecta riesgos con evidencia y practica decisiones reales antes de tu evaluación.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#guia">Empezar a estudiar <span>→</span></a>
+          <a class="btn ghost" href="#quiz">Ir al cuestionario</a>
+        </div>
+        <div class="source-note">Basado en 5 documentos · Clases 1–5 · ITAF / ISACA</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="radar-card">
+          <div class="radar-head"><span>MAPA DE RIESGO</span><span class="live-dot">EN VIVO</span></div>
+          <div class="radar-grid"><span class="axis x"></span><span class="axis y"></span>
+            <i class="risk r1"></i><i class="risk r2"></i><i class="risk r3"></i><i class="risk r4"></i><i class="risk r5"></i>
+          </div>
+          <div class="radar-foot"><span>PROBABILIDAD →</span><span>5 riesgos detectados</span></div>
+        </div>
+        <div class="float-chip chip-one">✓ Evidencia objetiva</div>
+        <div class="float-chip chip-two">↑ Riesgo crítico</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>5</strong><span>módulos clave</span></div><div><strong>20</strong><span>preguntas</span></div><div><strong>1</strong><span>caso integral</span></div><div><strong>100%</strong><span>basado en clase</span></div>
+    </section>
+
+    <section class="section" id="guia">
+      <div class="section-heading"><div><span class="kicker">01 · GUÍA DE ESTUDIO</span><h2>Lo esencial, sin ruido.</h2></div><p>Selecciona un módulo para desplegar sus conceptos. Marca lo que ya dominas y tu avance quedará guardado.</p></div>
+      <div class="study-layout">
+        <aside class="module-nav" id="moduleNav"></aside>
+        <article class="lesson" id="lesson"></article>
+      </div>
+    </section>
+
+    <section class="section route-section" id="ruta">
+      <div class="section-heading light"><div><span class="kicker">02 · EL MÉTODO</span><h2>El ciclo completo.</h2></div><p>ITAF ordena el trabajo para que las conclusiones sean consistentes, defendibles y verificables.</p></div>
+      <div class="cycle" id="cycle"></div>
+      <div class="formula"><span>RIESGO</span><b>→</b><span>CONTROL</span><b>→</b><span>EVIDENCIA</span><b>→</b><span>HALLAZGO</span></div>
+    </section>
+
+    <section class="section activities-section" id="actividades">
+      <div class="section-heading"><div><span class="kicker">03 · APRENDER HACIENDO</span><h2>Actividades de clase.</h2></div><p>Ejercicios recuperados de los documentos, ampliados con instrucciones, entregables y criterios para autoevaluarte.</p></div>
+      <div class="activity-tabs" id="activityTabs"></div>
+      <article class="activity-panel" id="activityPanel"></article>
+      <div class="claro-workshop">
+        <div class="claro-image"><img src="image (1).png" alt="Caso Claro Guatemala sobre fotografías de DPI en teléfonos personales"></div>
+        <div class="claro-content"><span class="kicker">TALLER GUIADO · ITAF</span><h3>Caso Claro Guatemala</h3><p>Los vendedores guardan fotografías de DPI en teléfonos personales. No hay política formal, cifrado, control de acceso ni respaldo.</p>
+          <div class="workshop-grid">
+            <details open><summary>1. Riesgos prioritarios</summary><p>Exposición o pérdida de datos personales; acceso de terceros al teléfono; uso no autorizado; incumplimiento de privacidad e imposibilidad de eliminar información de forma controlada.</p></details>
+            <details><summary>2. Evidencia a solicitar</summary><p>Inventario de dispositivos y usuarios, muestra autorizada de fotografías, configuraciones de cifrado y bloqueo, procedimiento de captura, política de datos, registros de incidentes y contratos aplicables.</p></details>
+            <details><summary>3. Entrevistas clave</summary><p>Ventas para conocer el flujo real; Seguridad para revisar controles; Legal o Privacidad para definir criterios; TI para evaluar alternativas; RR. HH. para responsabilidades y capacitación.</p></details>
+            <details><summary>4. Pruebas de auditoría</summary><p>Seleccionar una muestra de vendedores, inspeccionar con autorización sus configuraciones, trazar una imagen desde captura hasta eliminación y contrastar la práctica con el criterio.</p></details>
+            <details><summary>5. Hallazgo modelo</summary><p><b>Condición:</b> se almacenan DPI en equipos personales sin cifrado ni control. <b>Criterio:</b> la información sensible debe protegerse y limitarse por necesidad. <b>Causa:</b> el proceso creció sin diseño de seguridad. <b>Consecuencia:</b> divulgación, pérdida y daño reputacional. <b>Recomendación:</b> usar una aplicación corporativa cifrada, impedir almacenamiento local y definir retención y borrado verificable.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="caso">
+      <div class="section-heading"><div><span class="kicker">04 · CASO INTEGRAL</span><h2>Banco NovaGuate.</h2></div><p>Caso ficticio académico: identifica señales, prioriza riesgos y decide qué evidencia pedir.</p></div>
+      <div class="case-intro"><div><span class="case-label">CONTEXTO</span><h3>La transformación digital avanzó.<br>Los controles, no siempre.</h3><p>18 agencias · 620 colaboradores · 240,000 clientes. El banco migró infraestructura, renovó su app e integró una fintech.</p></div><div class="case-score"><span>OBJETIVO</span><strong>C · I · D</strong><small>Confidencialidad · Integridad · Disponibilidad</small></div></div>
+      <div class="risk-cards" id="riskCards"></div>
+      <div class="finding-builder">
+        <div><span class="kicker">PLANTILLA MENTAL</span><h3>Construye un hallazgo sólido</h3></div>
+        <div class="finding-flow"><span><b>01</b> Condición<small>¿Qué comprobé?</small></span><i>→</i><span><b>02</b> Criterio<small>¿Qué debía ser?</small></span><i>→</i><span><b>03</b> Causa<small>¿Por qué ocurrió?</small></span><i>→</i><span><b>04</b> Consecuencia<small>¿Qué riesgo genera?</small></span><i>→</i><span><b>05</b> Recomendación<small>¿Qué acción corrige?</small></span></div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div id="quizIntro" class="quiz-intro">
+        <span class="kicker">05 · AUTOEVALUACIÓN</span><h2>¿Listo para la auditoría?</h2><p>20 preguntas tomadas de los temas y situaciones de los documentos. Recibirás explicación inmediata al responder.</p>
+        <div class="quiz-config"><label>Modo<select id="quizMode"><option value="all">Completo · 20 preguntas</option><option value="quick">Rápido · 10 preguntas</option></select></label><button class="btn primary" id="startQuiz">Comenzar <span>→</span></button></div>
+      </div>
+      <div class="quiz-shell hidden" id="quizShell">
+        <div class="quiz-top"><button id="exitQuiz" class="text-btn">← Salir</button><span id="quizCounter">Pregunta 1 / 20</span><span id="quizScore">0 pts</span></div>
+        <div class="progress"><span id="quizProgress"></span></div>
+        <div class="question-card"><div class="question-type" id="questionType"></div><h3 id="questionText"></h3><div class="answers" id="answers"></div><div class="feedback hidden" id="feedback"></div><button class="btn primary next hidden" id="nextQuestion">Siguiente <span>→</span></button></div>
+      </div>
+      <div class="results hidden" id="results"></div>
+    </section>
+  </main>
+  <footer><div class="brand"><span class="brand-mark">A</span><span>Audit<span>Lab</span></span></div><p>Material académico · Universidad de Occidente</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
